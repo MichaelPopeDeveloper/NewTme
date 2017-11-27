@@ -39,9 +39,17 @@ body {
 	width: 100%;
 }
 
+.menu-line {
+	display: flex;
+	align-self: center;
+	width: 80%;
+	height: 1px;
+	background-color: #D1F0CE;
+}
+
 .tme-menu-header {
 	text-align: center;
-	color: #D1F0CE;
+	color: white;
 	font-size: 2vw;
 }
 
@@ -55,7 +63,7 @@ body {
 
 .menu-sub-header-text {
 	text-align: center;
-	color: #D1F0CE;
+	color: white;
 	font-size: 1vw;
 }
 
@@ -155,7 +163,7 @@ body {
 	align-content: center;
 	width: 84%;
 	margin-left: 16%;
-	background-color: #FFC300;
+	background-color: white;
 
 }
 
@@ -196,7 +204,8 @@ body {
 	flex-direction: column;
 	align-items: center;
 	align-content: center;
-	margin-top: -50%;
+	margin-top: 7%;
+
 	width: 80%;
 
 }
@@ -206,6 +215,8 @@ body {
 	text-align: center;
 	color: black;
 }
+
+/*These classes are used to color words in the main-content*/
 
 .blue {
   color: blue;
@@ -220,6 +231,8 @@ body {
   color: red;
   font-weight: bold;
 }
+
+/*End of coloring selectors*/
 
 .main-content-videos {
 
@@ -236,6 +249,8 @@ body {
 
 }
 
+/*This class controls the video slider circles*/
+
 .circle {
   background: transparent;
   border-style: solid;
@@ -247,6 +262,8 @@ body {
   margin-left: 0.5%;
 
 }
+
+/*This container is a flex box for the elements at the bottom of the main content*/
 
 .enlist-nav-container {
 	display: inline-flex;
@@ -299,6 +316,8 @@ body {
 	font-size: 1.8vw;
 }
 
+
+
 /*This controls the directive.html subpage*/
 .directive-parent-header {
 	display: flex;
@@ -322,11 +341,22 @@ body {
 	align-items: center;
 	align-content: center;
 	width: 100%;
+	margin-top: 60%;
+}
+
+#p-1-directive {
+	margin-left: 1.5%;
+	margin-top: -3%;
+	font-size: 2vw;
+	text-align: justify;
+	color: black;
+	max-width: 47%;
+
 }
 
 .directive-img {
-	height: 100%;
-	width: 100%;
+	height: 50%;
+	width: 50%;
 }
 
 #p-container-container {
@@ -338,6 +368,10 @@ body {
 	width: 80%;
 
 }
+
+/*end of directive page*/
+
+
 
 /*This controls the ntf.html page*/
 

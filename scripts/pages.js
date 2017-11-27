@@ -2,21 +2,57 @@
  * index.js
  * - All our useful JS goes here, awesome!
  */
+ function disapearTME() {
+ 	  $(".sub-menu-tme").css("display", "none");
+};
+
+ 
+
+ 	function disapearTimer() {
+ 		clearTimeout(disapearTME);
+ 			disapearTME = setTimeout(disapearTME, 10);
+
+ 	}
 
 $(document).ready(function(){
 
 
 $(".ntf-hover").hover(function() {
+
 $(".sub-menu-tme").css("display", "flex");
 
 })
 
  $(".ntf-hover").mouseleave(function() {
-$(".sub-menu-tme").css("display", "none");
+
+disapearTimer();
+
+
+
+
+ 	// if ($('#sub-menu-tme').is(":hover")) {
+ 	// 	clearTimeout(disapearTME);
+ 	// }
+
+
 
 
     
   });
+
+  // $(".sub-menu-tme").mouseleave(function() {
+
+
+ 	// disapearTME = setInterval(disapearTME, 500);
+
+
+
+
+    
+  // });
+
+
+
 
  $(".blue-hover").hover(function() {
 $(".sub-menu-blueprint").css("display", "flex");

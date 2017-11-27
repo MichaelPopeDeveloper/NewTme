@@ -1,0 +1,360 @@
+/**
+ * index.scss
+ * - Add any styles you want here!
+ */
+
+ a {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration:none;
+}
+
+
+body {
+	margin: 0;
+	overflow-x: hidden;
+  background-color: white;
+}
+
+
+/*Thos controls the menu*/
+
+.menu {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  width: 16%;
+  height: 100%;
+  background-color: #222222;
+}
+.tme-menu-wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	width: 100%;
+}
+
+.menu-line {
+	display: flex;
+	align-self: center;
+	width: 80%;
+	height: 1px;
+	background-color: #D1F0CE;
+}
+
+.tme-menu-header {
+	text-align: center;
+	color: white;
+	font-size: 2vw;
+}
+
+.menu-sub-header-wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	width: 100%;
+}
+
+.menu-sub-header-text {
+	text-align: center;
+	color: white;
+	font-size: 1vw;
+}
+
+.menu-tabs {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0%;
+
+}
+
+.menu-box {
+	display: flex;
+	padding: 0;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+.menu-box:hover {
+	background-color: lightblue;
+}
+
+.menu-box-text {
+	color: white;
+	font-size: 1.5vw;
+}
+
+.sub-menu-tme {
+	position: absolute;
+	display: none;
+	flex-direction: column;
+	margin-top: 79%;
+	margin-left: 100%;
+	width: 100%;
+	background-color: #222222;
+
+}
+
+.sub-menu-blueprint {
+	position: absolute;
+	display: none;
+	flex-direction: column;
+	margin-top: 128.8%;
+	margin-left: 100%;
+	width: 100%;
+	background-color: #222222;
+}
+
+.sub-menu-media {
+	position: absolute;
+	display: none;
+	flex-direction: column;
+	margin-top: 80%;
+	margin-left: 100%;
+	width: 100%;
+	background-color: #222222;
+}
+
+.sub-menu-enlist {
+	position: absolute;
+	display: none;
+	flex-direction: column;
+	margin-top: 203%;
+	margin-left: 100%;
+	width: 100%;
+	background-color: #222222;
+}
+
+.sub-menu-box {
+	display: flex;
+	padding: 0;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+.sub-menu-box:hover {
+	background-color: lightblue;
+} 
+
+
+
+
+.sub-menu-text {
+	text-align: center;
+	color: white;
+	font-size: 1.5vw;
+}
+/*End of menu controls*/
+
+
+
+
+/*These control the main content*/
+.main-content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	align-content: center;
+	width: 84%;
+	margin-left: 16%;
+	background-color: white;
+
+}
+
+.families-img {
+	width: 100%;
+	height: 100%;
+	opacity: 0.1;
+}
+
+.main-content-border {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	align-content: center;
+    border-style: solid;
+    border-width: 2px 2px 2px 2px;
+    width: 90%;
+    margin-top: 1%;
+    background-color: #D1F0CE;
+    
+}
+
+.main-h1-container {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+/*	margin-top: -44%;*/
+}
+
+.main-content-h1 {
+	color: blue;
+	font-size: 3vw;
+}
+
+#p-container {
+	display: inline-flex;
+	flex-direction: column;
+	align-items: center;
+	align-content: center;
+	margin-top: -50%;
+	width: 80%;
+
+}
+
+#p-1 {
+	font-size: 2vw;
+	text-align: center;
+	color: black;
+}
+
+.blue {
+  color: blue;
+  font-weight: bold;
+}
+
+.green {
+  color: green;
+  font-weight: bold;
+}
+.red {
+  color: red;
+  font-weight: bold;
+}
+
+.main-content-videos {
+
+}
+
+.video-slider-circles {
+	display: inline-flex;
+	flex-direction: row;
+	justify-content: center;
+	width: 86%;
+	height: 1em;
+	margin-top: 47%;
+	position: absolute;
+
+}
+
+.circle {
+  background: transparent;
+  border-style: solid;
+      border-width: 1px;
+  border-color: white;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  margin-left: 0.5%;
+
+}
+
+.enlist-nav-container {
+	display: inline-flex;
+	justify-content: flex-start;
+	width: 100%;
+	margin-bottom: 1%;
+
+
+}
+
+.nav-word-button {
+	display: flex;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+	color: black;
+	font-size: 2.5vw;
+
+	margin-left: 3%;
+}
+
+.green-button-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+	margin-left: 3%;
+
+	height: 100%;
+	width: 20%;
+}
+
+.green-button {
+	width: 75%;
+	height: 100%;
+}
+
+.green-button-sub {
+	position: absolute;
+	margin-top: -0.05%;
+	color: white;
+	font-size: 1.8vw;
+}
+
+.green-button-enlist {
+	position: absolute;
+	margin-top: -0.05%;
+	color: white;
+	font-size: 1.8vw;
+}
+
+/*This controls the directive.html subpage*/
+.directive-parent-header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+	margin-top: -45%;
+	width: 100%;
+}
+
+.game-changer-h1 {
+	color: orange;
+	font-size: 2vw;
+}
+
+
+
+.directive-header-container {
+	display: inline-flex;
+	align-items: center;
+	align-content: center;
+	width: 100%;
+}
+
+.directive-img {
+	height: 100%;
+	width: 100%;
+}
+
+#p-container-container {
+	display: inline-flex;
+	flex-direction: column;
+	align-items: center;
+	align-content: center;
+	margin-top: -50%;
+	width: 80%;
+
+}
+
+/*This controls the ntf.html page*/
+
+#main-content-h1 {
+	color: orange;
+	font-size: 2vw;
+
+}
