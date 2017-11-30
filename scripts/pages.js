@@ -6,11 +6,45 @@
  	  $(".sub-menu-tme").css("display", "none");
 };
 
+ function disapearBlueprint() {
+ 	  $(".sub-menu-blueprint").css("display", "none");
+};
+
+ function disapearMedia() {
+ 	  $(".sub-menu-media").css("display", "none");
+};
+
+ function disapearEnlist() {
+ 	  $(".sub-menu-enlist").css("display", "none");
+};
+
  
 
- 	function disapearTimer() {
- 		clearTimeout(disapearTME);
- 			disapearTME = setTimeout(disapearTME, 10);
+ 	function disapearTimerTme() {
+ 			disapearTmeTimer = setTimeout(disapearTME, 10);
+ 			// clearTimeout(disapearTmeTimer);
+
+
+ 	}
+
+ 		function disapearTimerBlueprint() {
+ 			disapearBlueprintTimer = setTimeout(disapearBlueprint, 10);
+ 			// clearTimeout(disapearTmeTimer);
+
+
+ 	}
+
+ 		function disapearTimerMedia() {
+ 			disapearMediaTimer = setTimeout(disapearMedia, 10);
+ 			// clearTimeout(disapearTmeTimer);
+
+
+ 	}
+
+ 		function disapearTimerEnlist() {
+ 			disapearEnlistTimer = setTimeout(disapearEnlist, 10);
+ 			// clearTimeout(disapearTmeTimer);
+
 
  	}
 
@@ -25,70 +59,120 @@ $(".sub-menu-tme").css("display", "flex");
 
  $(".ntf-hover").mouseleave(function() {
 
-disapearTimer();
-
-
-
-
- 	// if ($('#sub-menu-tme').is(":hover")) {
- 	// 	clearTimeout(disapearTME);
- 	// }
-
-
-
+disapearTimerTme();
 
     
   });
 
-  // $(".sub-menu-tme").mouseleave(function() {
+ $(".sub-menu-tme").hover(function() {
 
+clearTimeout(disapearTmeTimer);
 
- 	// disapearTME = setInterval(disapearTME, 500);
+})
 
+ $(".sub-menu-tme").mouseleave(function() {
 
-
+disapearTmeTimer = setTimeout(disapearTME, 100);
 
     
-  // });
+  });
+
+
 
 
 
 
  $(".blue-hover").hover(function() {
+
 $(".sub-menu-blueprint").css("display", "flex");
 
 })
 
  $(".blue-hover").mouseleave(function() {
-$(".sub-menu-blueprint").css("display", "none");
 
+disapearTimerBlueprint();
 
     
   });
 
-  $(".media-hover").hover(function() {
+ $(".sub-menu-blueprint").hover(function() {
+
+clearTimeout(disapearBlueprintTimer);
+
+})
+
+ $(".sub-menu-blueprint").mouseleave(function() {
+
+disapearBlueprintTimer = setTimeout(disapearBlueprint, 10);
+
+    
+  });
+
+
+
+
+ $(".media-hover").hover(function() {
+
 $(".sub-menu-media").css("display", "flex");
 
 })
 
  $(".media-hover").mouseleave(function() {
-$(".sub-menu-media").css("display", "none");
 
+disapearTimerMedia();
 
     
   });
 
-   $(".enlist-hover").hover(function() {
+ $(".sub-menu-media").hover(function() {
+
+clearTimeout(disapearMediaTimer);
+
+})
+
+ $(".sub-menu-media").mouseleave(function() {
+
+disapearMediaTimer = setTimeout(disapearMedia, 10);
+
+    
+  });
+
+
+
+
+
+
+ $(".enlist-hover").hover(function() {
+
 $(".sub-menu-enlist").css("display", "flex");
 
 })
 
  $(".enlist-hover").mouseleave(function() {
-$(".sub-menu-enlist").css("display", "none");
 
+disapearTimerEnlist();
 
     
   });
+
+ $(".sub-menu-enlist").hover(function() {
+
+clearTimeout(disapearEnlistTimer);
+
+})
+
+ $(".sub-menu-enlist").mouseleave(function() {
+
+disapearEnlistTimer = setTimeout(disapearEnlist, 10);
+
+    
+  });
+
+ 
+
+
+
+
      
    
 

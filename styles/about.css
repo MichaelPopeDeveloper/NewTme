@@ -96,10 +96,11 @@ body {
 	position: absolute;
 	display: none;
 	flex-direction: column;
-	margin-top: 79%;
+	margin-top: 73%;
 	margin-left: 100%;
 	width: 100%;
 	background-color: #222222;
+	z-index: 10;
 
 }
 
@@ -107,7 +108,17 @@ body {
 	position: absolute;
 	display: none;
 	flex-direction: column;
-	margin-top: 128.8%;
+	margin-top: 122.8%;
+	margin-left: 100%;
+	width: 100%;
+	background-color: #222222;
+}
+
+.sub-menu-advocates {
+	position: absolute;
+	display: none;
+	flex-direction: column;
+	margin-top: 97.8%;
 	margin-left: 100%;
 	width: 100%;
 	background-color: #222222;
@@ -127,7 +138,7 @@ body {
 	position: absolute;
 	display: none;
 	flex-direction: column;
-	margin-top: 203%;
+	margin-top: 196%;
 	margin-left: 100%;
 	width: 100%;
 	background-color: #222222;
@@ -172,6 +183,7 @@ body {
 }
 
 .families-img {
+	position: relative;
 	width: 100%;
 	height: 100%;
 	opacity: 0.1;
