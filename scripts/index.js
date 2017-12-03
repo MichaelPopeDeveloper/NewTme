@@ -20,6 +20,7 @@ $("#circle2").css("background-color", "transparent");
 $("#circle3").css("background-color", "transparent");
 $("#circle4").css("background-color", "transparent");
 $("#circle5").css("background-color", "transparent");
+$("#circle6").css("background-color", "transparent");
 
  slide2Timer = setTimeout(slide2, slideTime);
 
@@ -34,6 +35,7 @@ $("#circle1").css("background-color", "transparent");
 $("#circle3").css("background-color", "transparent");
 $("#circle4").css("background-color", "transparent");
 $("#circle5").css("background-color", "transparent");
+$("#circle6").css("background-color", "transparent");
 
 slide3Timer = setTimeout(slide3, slideTime);
 
@@ -48,6 +50,7 @@ $("#circle1").css("background-color", "transparent");
 $("#circle2").css("background-color", "transparent");
 $("#circle4").css("background-color", "transparent");
 $("#circle5").css("background-color", "transparent");
+$("#circle6").css("background-color", "transparent");
 
 slide4Timer = setTimeout(slide4, slideTime);
 
@@ -61,6 +64,7 @@ $("#circle1").css("background-color", "transparent");
 $("#circle2").css("background-color", "transparent");
 $("#circle3").css("background-color", "transparent");
 $("#circle5").css("background-color", "transparent");
+$("#circle6").css("background-color", "transparent");
 
 slide5Timer = setTimeout(slide5, slideTime);
 
@@ -74,6 +78,21 @@ $("#circle1").css("background-color", "transparent");
 $("#circle2").css("background-color", "transparent");
 $("#circle3").css("background-color", "transparent");
 $("#circle4").css("background-color", "transparent");
+$("#circle6").css("background-color", "transparent");
+
+slide1Timer = setTimeout(slide6, slideTime);
+
+
+}
+
+function slide6() {
+document.getElementById('main-content-video-1').src = 'videos/promo.mp4';
+$("#circle6").css("background-color", "orange");
+$("#circle1").css("background-color", "transparent");
+$("#circle2").css("background-color", "transparent");
+$("#circle3").css("background-color", "transparent");
+$("#circle4").css("background-color", "transparent");
+$("#circle5").css("background-color", "transparent");
 
 slide1Timer = setTimeout(slide1, slideTime);
 
