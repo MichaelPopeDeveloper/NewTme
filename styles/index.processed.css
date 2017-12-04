@@ -117,11 +117,8 @@ body {
 	position: absolute;
 	display: none;
 	flex-direction: column;
-<<<<<<< HEAD
 	margin-top: 85%;
-=======
 	margin-top: 97.8%;
->>>>>>> 9b7757f6798e2a96ec245632760c323a26925d6f
 	margin-left: 100%;
 	width: 100%;
 	background-color: #222222;
@@ -189,7 +186,6 @@ body {
 	display: flex;
 	width: 84%;
 	margin-left: 18%;
-<<<<<<< HEAD
 	margin-top: 10%;
 	flex-direction: column;
 
@@ -201,8 +197,6 @@ body {
 	width: 84%;
 	margin-left: 18%;
 	margin-top: -1%;
-=======
->>>>>>> 9b7757f6798e2a96ec245632760c323a26925d6f
 	flex-direction: column;
 
 
@@ -222,6 +216,32 @@ body {
 		font-family: helvetica;
 }
 
+.podcast-container {
+	margin-top: -17%;
+	position: absolute;
+
+	display: flex;
+	justify-content: space-between;
+	width: 84%;
+	
+}
+
+.line { 
+	height: 400px;
+	width: 2px;
+	margin-left: 5%;
+	margin-top: -10%;
+	background-color: #FFDF00;
+}
+
+.tune-in-container {
+	display: flex;
+	flex-direction: column;
+	margin-top: -7%;
+	margin-left: 7%;
+
+}
+
 .podcast-img {
 	position: absolute;
 	width: 30%;
@@ -230,24 +250,21 @@ body {
 	margin-left: 42%;
 }
 
-<<<<<<< HEAD
+
 .pledge {
 	align-self: center;
-	width: 40%;
-	height: 40%;
+	margin-top: -20%;
+	margin-left: 25%;
+	width: 135%;
+	height: 100%;
 }
 
-=======
->>>>>>> 9b7757f6798e2a96ec245632760c323a26925d6f
 .tester-content-text {
 	display: flex;
 	flex-direction: column;
 	width: 80%;
-<<<<<<< HEAD
 	margin-top: 15%;
-=======
-	margin-top: 5%;
->>>>>>> 9b7757f6798e2a96ec245632760c323a26925d6f
+	margin-top: 20%;
 	margin-left: 7%;
 	/*background-color: yellow;
 */}
@@ -259,9 +276,9 @@ body {
 	color: blue;
 }
 
-<<<<<<< HEAD
 .tune-in {
-	margin-left: 8%;
+	font-size: 1vw;
+
 }
 
 .img-content-container {
@@ -272,13 +289,13 @@ body {
 }
 
 .ntf-img {
-	width: 40%;
-	height: 40%;
-	8
+	margin-top: -10%;
+	width: 50%;
+	height: 50%;
+	
 }
 
-=======
->>>>>>> 9b7757f6798e2a96ec245632760c323a26925d6f
+
 .tester-text {
 	font-size: 1.5vw;
 	text-align: left;
@@ -316,11 +333,10 @@ body {
 }
 
 .tower {
-position: absolute;
-margin-top: -2%;
-margin-left: 35%;
-	width: 20%;
-	height: 20%;
+	margin-left: 23%;
+
+	width: 40%;
+	height: 40%;
 }
 
 .main-content-h1 {
