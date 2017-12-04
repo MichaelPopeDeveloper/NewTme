@@ -3,6 +3,64 @@
  * - All our useful JS goes here, awesome!
  */
 
+function disapearTME() {
+    $(".sub-menu-tme").css("display", "none");
+};
+
+ function disapearBlueprint() {
+    $(".sub-menu-blueprint").css("display", "none");
+};
+
+ function disapearAdvocates() {
+    $(".sub-menu-advocates").css("display", "none");
+};
+
+ function disapearMedia() {
+    $(".sub-menu-media").css("display", "none");
+};
+
+ function disapearEnlist() {
+    $(".sub-menu-enlist").css("display", "none");
+};
+
+ 
+
+  function disapearTimerTme() {
+      disapearTmeTimer = setTimeout(disapearTME, 10);
+      // clearTimeout(disapearTmeTimer);
+
+
+  }
+
+    function disapearTimerBlueprint() {
+      disapearBlueprintTimer = setTimeout(disapearBlueprint, 10);
+      // clearTimeout(disapearTmeTimer);
+
+
+  }
+
+    function disapearTimerAdvocates() {
+      disapearAdvocatesTimer = setTimeout(disapearAdvocates, 10);
+      // clearTimeout(disapearTmeTimer);
+
+
+  }
+
+    function disapearTimerMedia() {
+      disapearMediaTimer = setTimeout(disapearMedia, 10);
+      // clearTimeout(disapearTmeTimer);
+
+
+  }
+
+    function disapearTimerEnlist() {
+      disapearEnlistTimer = setTimeout(disapearEnlist, 10);
+      // clearTimeout(disapearTmeTimer);
+
+
+  }
+
+
 $(document).ready(function(){
 var slideTime = 7000;
 
@@ -20,6 +78,7 @@ $("#circle2").css("background-color", "transparent");
 $("#circle3").css("background-color", "transparent");
 $("#circle4").css("background-color", "transparent");
 $("#circle5").css("background-color", "transparent");
+$("#circle6").css("background-color", "transparent");
 
  slide2Timer = setTimeout(slide2, slideTime);
 
@@ -34,6 +93,7 @@ $("#circle1").css("background-color", "transparent");
 $("#circle3").css("background-color", "transparent");
 $("#circle4").css("background-color", "transparent");
 $("#circle5").css("background-color", "transparent");
+$("#circle6").css("background-color", "transparent");
 
 slide3Timer = setTimeout(slide3, slideTime);
 
@@ -48,6 +108,7 @@ $("#circle1").css("background-color", "transparent");
 $("#circle2").css("background-color", "transparent");
 $("#circle4").css("background-color", "transparent");
 $("#circle5").css("background-color", "transparent");
+$("#circle6").css("background-color", "transparent");
 
 slide4Timer = setTimeout(slide4, slideTime);
 
@@ -61,6 +122,7 @@ $("#circle1").css("background-color", "transparent");
 $("#circle2").css("background-color", "transparent");
 $("#circle3").css("background-color", "transparent");
 $("#circle5").css("background-color", "transparent");
+$("#circle6").css("background-color", "transparent");
 
 slide5Timer = setTimeout(slide5, slideTime);
 
@@ -74,6 +136,21 @@ $("#circle1").css("background-color", "transparent");
 $("#circle2").css("background-color", "transparent");
 $("#circle3").css("background-color", "transparent");
 $("#circle4").css("background-color", "transparent");
+$("#circle6").css("background-color", "transparent");
+
+slide1Timer = setTimeout(slide6, slideTime);
+
+
+}
+
+function slide6() {
+document.getElementById('main-content-video-1').src = 'videos/promo.mp4';
+$("#circle6").css("background-color", "orange");
+$("#circle1").css("background-color", "transparent");
+$("#circle2").css("background-color", "transparent");
+$("#circle3").css("background-color", "transparent");
+$("#circle4").css("background-color", "transparent");
+$("#circle5").css("background-color", "transparent");
 
 slide1Timer = setTimeout(slide1, slideTime);
 
@@ -141,50 +218,147 @@ slide5();
 
 
 
-    $(".ntf-hover").hover(function() {
+$(".ntf-hover").hover(function() {
+
 $(".sub-menu-tme").css("display", "flex");
 
-})
+});
 
  $(".ntf-hover").mouseleave(function() {
-$(".sub-menu-tme").css("display", "none");
 
+disapearTimerTme();
 
     
   });
+
+ $(".sub-menu-tme").hover(function() {
+
+clearTimeout(disapearTmeTimer);
+
+});
+
+ $(".sub-menu-tme").mouseleave(function() {
+
+disapearTmeTimer = setTimeout(disapearTME, 100);
+
+    
+  });
+
+
+
+
+
 
  $(".blue-hover").hover(function() {
+
 $(".sub-menu-blueprint").css("display", "flex");
 
-})
+});
 
  $(".blue-hover").mouseleave(function() {
-$(".sub-menu-blueprint").css("display", "none");
 
+disapearTimerBlueprint();
 
     
   });
 
-  $(".media-hover").hover(function() {
+ $(".sub-menu-blueprint").hover(function() {
+
+clearTimeout(disapearBlueprintTimer);
+
+});
+
+ $(".sub-menu-blueprint").mouseleave(function() {
+
+disapearBlueprintTimer = setTimeout(disapearBlueprint, 10);
+
+    
+  });
+
+
+
+ $(".advocates-hover").hover(function() {
+
+$(".sub-menu-advocates").css("display", "flex");
+
+});
+
+ $(".advocates-hover").mouseleave(function() {
+
+disapearTimerAdvocates();
+
+    
+  });
+
+  $(".sub-menu-advocates").hover(function() {
+
+clearTimeout(disapearAdvocatesTimer);
+
+});
+
+ $(".sub-menu-advocates").mouseleave(function() {
+
+disapearAdvocatesTimer = setTimeout(disapearAdvocates, 10);
+
+    
+  });
+
+
+
+
+ $(".media-hover").hover(function() {
+
 $(".sub-menu-media").css("display", "flex");
 
-})
+});
 
  $(".media-hover").mouseleave(function() {
-$(".sub-menu-media").css("display", "none");
 
+disapearTimerMedia();
 
     
   });
 
-   $(".enlist-hover").hover(function() {
+ $(".sub-menu-media").hover(function() {
+
+clearTimeout(disapearMediaTimer);
+
+});
+
+ $(".sub-menu-media").mouseleave(function() {
+
+disapearMediaTimer = setTimeout(disapearMedia, 10);
+
+    
+  });
+
+
+
+
+
+
+ $(".enlist-hover").hover(function() {
+
 $(".sub-menu-enlist").css("display", "flex");
 
-})
+});
 
  $(".enlist-hover").mouseleave(function() {
-$(".sub-menu-enlist").css("display", "none");
 
+disapearTimerEnlist();
+
+    
+  });
+
+ $(".sub-menu-enlist").hover(function() {
+
+clearTimeout(disapearEnlistTimer);
+
+});
+
+ $(".sub-menu-enlist").mouseleave(function() {
+
+disapearEnlistTimer = setTimeout(disapearEnlist, 10);
 
     
   });

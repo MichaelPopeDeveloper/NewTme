@@ -10,6 +10,10 @@
  	  $(".sub-menu-blueprint").css("display", "none");
 };
 
+ function disapearAdvocates() {
+ 	  $(".sub-menu-advocates").css("display", "none");
+};
+
  function disapearMedia() {
  	  $(".sub-menu-media").css("display", "none");
 };
@@ -29,6 +33,13 @@
 
  		function disapearTimerBlueprint() {
  			disapearBlueprintTimer = setTimeout(disapearBlueprint, 10);
+ 			// clearTimeout(disapearTmeTimer);
+
+
+ 	}
+
+ 		function disapearTimerAdvocates() {
+ 			disapearAdvocatesTimer = setTimeout(disapearAdvocates, 10);
  			// clearTimeout(disapearTmeTimer);
 
 
@@ -104,6 +115,34 @@ clearTimeout(disapearBlueprintTimer);
  $(".sub-menu-blueprint").mouseleave(function() {
 
 disapearBlueprintTimer = setTimeout(disapearBlueprint, 10);
+
+    
+  });
+
+
+
+ $(".advocates-hover").hover(function() {
+
+$(".sub-menu-advocates").css("display", "flex");
+
+})
+
+ $(".advocates-hover").mouseleave(function() {
+
+disapearTimerAdvocates();
+
+    
+  });
+
+  $(".sub-menu-advocates").hover(function() {
+
+clearTimeout(disapearAdvocatesTimer);
+
+})
+
+ $(".sub-menu-advocates").mouseleave(function() {
+
+disapearAdvocatesTimer = setTimeout(disapearAdvocates, 10);
 
     
   });
