@@ -105,7 +105,7 @@ body {
 	margin-left: 100%;
 	width: 100%;
 	background-color: #222222;
-
+z-index: 10;
 }
 
 .sub-menu-blueprint {
@@ -116,6 +116,7 @@ body {
 	margin-left: 100%;
 	width: 100%;
 	background-color: #222222;
+	z-index: 10;
 }
 
 .sub-menu-advocates {
@@ -127,6 +128,7 @@ body {
 	margin-left: 100%;
 	width: 100%;
 	background-color: #222222;
+	z-index: 10;
 }
 
 .sub-menu-media {
@@ -137,6 +139,7 @@ body {
 	margin-left: 100%;
 	width: 100%;
 	background-color: #222222;
+	z-index: 10;
 }
 
 .sub-menu-enlist {
@@ -147,6 +150,7 @@ body {
 	margin-left: 100%;
 	width: 100%;
 	background-color: #222222;
+	z-index: 999;
 }
 
 .sub-menu-box {
@@ -354,6 +358,10 @@ body {
 	/*background-color: yellow;
 */}
 
+.benifits li {
+	font-size: 1.5vw;
+}
+
 .tester-text-header {
 	font-size: 2vw;
 	padding: 0;
@@ -415,6 +423,7 @@ body {
 	width: 81.8%;
 	margin-left: 18.2%;
 	margin-top: 2%;
+	pointer-events: none;
 /*	margin-top: -44%;*/
 }
 
@@ -428,6 +437,11 @@ margin-left: 2%;
 .main-content-h1 {
 	color: blue;
 	font-size: 3vw;
+}
+
+#main-content-h1-membership {
+	font-size: 1.6vw;
+	text-decoration: underline;
 }
 
 #p-container {
@@ -446,6 +460,14 @@ margin-left: 2%;
 	text-align: left;
 	font-size: 1.5vw;
 	color: black;
+}
+
+.p-1-directive-bottom {
+	margin-top: 3%;
+	text-align: left;
+	font-size: 1.8vw;
+	color: black;
+
 }
 
 /*These classes are used to color words in the main-content*/
@@ -540,6 +562,7 @@ margin-left: 2%;
 	display: flex;
 	flex-direction: column;
 	width: 100%;
+
 }
 
 .enlist-nav-line {
@@ -548,6 +571,7 @@ margin-left: 2%;
 	height: 0.3em;
 	background-color: blue;
 	margin-bottom: 2%;
+	z-index: -3;
 }
 
 .enlist-nav-container {
@@ -597,6 +621,7 @@ margin-left: 2%;
 	display: flex;
 	justify-content: center;
 	background-color: black;
+
 }
 
 .green-button-sub {
