@@ -27,7 +27,7 @@ body {
   position: fixed;
   display: flex;
   flex-direction: column;
-  width: 18.2%;
+  width: 15.5%;
   height: 100%;
   background-color: #222222;
 }
@@ -43,18 +43,18 @@ body {
 	display: flex;
 	margin-top: -3%;
 	align-self: center;
-	width: 80%;
+	width: 60%;
 	height: 1px;
-	background-color: #D1F0CE;
+	background-color: #FFDF00;
 }
 
 .menu-line-2 {
 	display: flex;
 	margin-top: 3%;
 	align-self: center;
-	width: 80%;
+	width: 60%;
 	height: 1px;
-	background-color: #D1F0CE;
+	background-color: #FFDF00;
 }
 
 .tme-menu-header {
@@ -95,7 +95,7 @@ body {
 }
 
 .menu-box:hover {
-	background-color: lightblue;
+	background-color: #FFDF00;
 }
 
 .menu-box-text {
@@ -165,7 +165,7 @@ body {
 }
 
 .sub-menu-box:hover {
-	background-color: lightblue;
+	background-color: #FFDF00;
 }
 
 
@@ -187,8 +187,8 @@ body {
 	flex-direction: column;
 	align-items: center;
 	align-content: center;
-	width: 84%;
-	margin-left: 16%;
+	width: 83%;
+	margin-left: 15%;
 	background-color:  white;
 
 }

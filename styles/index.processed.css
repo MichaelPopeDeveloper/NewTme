@@ -21,6 +21,11 @@ body {
 }
 
 
+.no-pointer {
+	  pointer-events: none;
+}
+
+
 /*Thos controls the menu*/
 
 .menu {
@@ -44,7 +49,7 @@ body {
 	align-self: center;
 	width: 80%;
 	height: 1px;
-	background-color: #D1F0CE;
+	background-color: #FFDF00;
 }
 
 .tme-menu-header {
@@ -118,7 +123,7 @@ body {
 	display: none;
 	flex-direction: column;
 	margin-top: 85%;
-	margin-top: 97.8%;
+	margin-top: 87%;
 	margin-left: 100%;
 	width: 100%;
 	background-color: #222222;
@@ -184,13 +189,30 @@ body {
 
 .tester-main-content {
 	display: flex;
-	width: 84%;
-	margin-left: 18%;
-	margin-top: 10%;
+	width: 81.8%;
+	margin-left: 18.2%;
+	margin-top: -6%;
 	flex-direction: column;
+	align-content: center;
+	align-items: center;
+	justify-content: center;
 
 
 }
+
+
+
+/*.tester-main-content {
+	position: absolute;
+	display: flex;
+	width: 84%;
+	margin-left: 18%;
+	margin-top: -6%;
+	flex-direction: column;
+	z-index: -3;
+
+
+}*/
 
 .community-main-content {
 	display: flex;
@@ -210,6 +232,18 @@ body {
 /*	background-color: green;*/
 }
 
+.header-line-ntf {
+	height: 0.2em;
+	width: 120%;
+	margin-top: 9%;
+}
+
+.header-line {
+	height: 0.2em;
+	width: 120%;
+	margin-top: 2%;
+}
+
 .social {
 	color: green;
 	margin-left: 7%;
@@ -217,28 +251,59 @@ body {
 }
 
 .podcast-container {
-	margin-top: -17%;
+	margin-top: -10%;
+	margin-left: -11%;
 	position: absolute;
-
 	display: flex;
-	justify-content: space-between;
-	width: 84%;
+	justify-content: space-around;
+	width: 81.8%;
+
 	
 }
 
 .line { 
-	height: 400px;
-	width: 2px;
+	height: 13em;
+	width: 0.1em;
 	margin-left: 5%;
 	margin-top: -10%;
 	background-color: #FFDF00;
 }
 
+.header-ntf {
+	position: absolute;
+	display: flex;
+	justify-content: flex-end;
+	width: 81.8%;
+	margin-top: 8%;
+	margin-left: 18.2%;
+	/*background-color: pink;*/
+
+
+}
+
+/*.header-ntf {
+	display: flex;
+	justify-content: flex-end;
+	position: absolute;
+	width: 100%;
+	margin-top: 10%;
+	margin-left: 3%;
+	background-color: green;
+
+}*/
+
 .tune-in-container {
+	width: 15%;
+	height: 20%;
 	display: flex;
 	flex-direction: column;
-	margin-top: -7%;
-	margin-left: 7%;
+	align-items: center;
+	align-content: center;
+	margin-top: -11%;
+	margin-left: 0%;
+/*	background-color: blue;*/
+	 border: 4px solid #FFDF00;
+
 
 }
 
@@ -262,9 +327,29 @@ body {
 .tester-content-text {
 	display: flex;
 	flex-direction: column;
+	align-items: center;
+	align-content: center;
+	width: 80%;
+	margin-top: 20%;
+}
+
+
+/*.tester-content-text {
+	display: flex;
+	flex-direction: column;
 	width: 80%;
 	margin-top: 15%;
 	margin-top: 20%;
+	margin-left: 7%;
+	background-color: yellow;
+}*/
+
+
+.ntf-content-text {
+	display: flex;
+	flex-direction: column;
+	width: 80%;
+	margin-top: 25%;
 	margin-left: 7%;
 	/*background-color: yellow;
 */}
@@ -277,6 +362,7 @@ body {
 }
 
 .tune-in {
+	margin-left: 0%;
 	font-size: 1vw;
 
 }
@@ -326,17 +412,17 @@ body {
 	position: absolute;
 	display: inline-flex;
 	justify-content: center;
-	width: 86%;
-	margin-left: 18%;
+	width: 81.8%;
+	margin-left: 18.2%;
 	margin-top: 2%;
 /*	margin-top: -44%;*/
 }
 
 .tower {
-	margin-left: 23%;
+margin-left: 2%;
 
-	width: 40%;
-	height: 40%;
+	width: 50%;
+	height: 60%;
 }
 
 .main-content-h1 {
@@ -384,6 +470,46 @@ body {
 
 }
 
+.game-vid {
+	display: flex;
+	justify-content: center;
+	position: relative;
+	width: 84%;
+	margin-left: 18%;
+	margin-top: 0%;
+	/*background-color: green;*/
+}
+
+.video-page-container {
+	display: flex;
+	justify-content: center;
+	width: 100vw;
+	height: 100vh;
+	margin-left: 0%;
+	background-color: black;
+
+}
+
+.video-fullscreen {
+	position:fixed; 
+	top:0px;
+	left:0px; 
+	bottom:0px;
+	right:0px; 
+	width:100%; 
+	height:100%; 
+	border:none; 
+	margin:0; 
+	padding:0; 
+	overflow:hidden; 
+	z-index:999999;
+}
+
+.game.changer.video {
+
+}
+
+
 .video-slider-circles {
 	display: inline-flex;
 	flex-direction: row;
@@ -400,7 +526,7 @@ body {
 .circle {
   background: transparent;
   border-style: solid;
-      border-width: 1px;
+   border-width: 1px;
   border-color: white;
   width: 18px;
   height: 18px;
@@ -410,14 +536,25 @@ body {
 }
 
 /*This container is a flex box for the elements at the bottom of the main content*/
+.enlist-footer {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.enlist-nav-line {
+	position: relative;
+	width: 100%;
+	height: 0.3em;
+	background-color: blue;
+	margin-bottom: 2%;
+}
 
 .enlist-nav-container {
 	display: inline-flex;
-	justify-content: space-around;
-	width: 100%;
+	justify-content: space-between;
+	width: 95%;
 	margin-bottom: 1%;
-
-
 }
 
 .nav-word-button {
@@ -429,6 +566,11 @@ body {
 	font-size: 2.5vw;
 
 	margin-left: 3%;
+}
+
+.nav-word {
+	font-size: 2vw;
+	font-weight: bold;
 }
 
 .green-button-container {
@@ -444,8 +586,17 @@ body {
 }
 
 .green-button {
-	width: 75%;
-	height: 100%;
+	width: 100%;
+	height: 75%;
+	background-color: green;
+}
+
+.green-container {
+	height: 50%;
+	width: 20%;
+	display: flex;
+	justify-content: center;
+	background-color: black;
 }
 
 .green-button-sub {
@@ -502,16 +653,42 @@ body {
 #p-1-directive {
 	margin-left: 1.5%;
 	margin-top: -3%;
-	font-size: 2vw;
+	font-size: 1.8vw;
 	text-align: justify;
 	color: black;
 	max-width: 47%;
 
 }
 
+/.small-img-container {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+
+}
+
+
+
+.header-cover {
+	display: flex;
+	width: 84%;
+	margin-left: 18%;
+	justify-content: center;
+}
+
 .directive-img {
 	height: 50%;
 	width: 50%;
+}
+
+.header-page-img {
+	width: 50%;
+	height: 50%;
+}
+
+.advocates-header-page-img {
+	width: 60%;
+	height: 60%;
 }
 
 #p-container-container {
@@ -523,7 +700,6 @@ body {
 	width: 80%;
 
 }
-
 /*end of directive page*/
 
 
@@ -544,7 +720,7 @@ body {
 /*This controls subpage tabs*/
 
 .comming-soon {
-	margin-left: 10%;
+	margin-left: 0%;
 	color: red;
 	font-size: 3vw;
 
